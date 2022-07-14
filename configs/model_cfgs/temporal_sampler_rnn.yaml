@@ -1,0 +1,9 @@
+model_name: 'TemporalSamplerRNN'
+model_params:
+    rnn_input_size: ~
+    rnn_hidden_size: 1024
+    rnn_num_layers: 2
+    max_frames_skip: 1  # Maximum number of frames that can be skipped
+    use_attn: True
+    use_hallu: True
+    use_ssim: True

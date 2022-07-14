@@ -1,0 +1,14 @@
+model_name: 'Pipeline3'
+model_params:
+    feat_model_cfg:  'configs/model_cfgs/ucf101/san19_multi_pairwise_112_actnetpretrained.yaml'
+    hallu_model_cfg: 'configs/model_cfgs/halluconvlstm2_2.yaml'
+    using_cupy: False
+    num_class: 101
+    num_segments: 16
+    rnn_prefix_len: 5
+    tf_decay: 0.95
+    modality: ['RGB']
+    attention_layer: ['layer2', '3']
+    attention_dim: [16, 14, 14]
+    new_length:
+        RGB: 1

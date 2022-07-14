@@ -1,0 +1,18 @@
+model_name: 'Pipeline5'
+model_params:
+    low_feat_model_cfg: 'configs/model_cfgs/san19_multi_pairwise_112_epicpretrained.yaml'
+    high_feat_model_cfg: 'configs/model_cfgs/san19_multi_pairwise_epicpretrained.yaml'
+    spatial_sampler_cfg: 'configs/model_cfgs/spatial_sampler_thres_top2.yaml'
+    actreg_model_cfg: 'configs/model_cfgs/actreggru2.yaml'
+    using_cupy: False
+    num_class: [125, 352]
+    num_segments: 10
+    feat_process_type: 'reduce'
+    reduce_dim: 1024
+    modality: ['RGB', 'Spec']
+    attention_layer: ['layer3', '0']
+    attention_dim: [32, 7, 7]
+    dropout: 0.5
+    new_length:
+        RGB: 1
+        Spec: 1

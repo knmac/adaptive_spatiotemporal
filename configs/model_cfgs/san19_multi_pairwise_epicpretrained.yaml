@@ -1,0 +1,10 @@
+model_name: 'SANMulti'
+model_params:
+    san_sa_type: 0  # Pairwise
+    san_layers:  [3, 3, 4, 6, 3]
+    san_kernels: [3, 7, 7, 7, 7]
+    san_pretrained_weights: 
+        #RGB: 'pretrained/san19_epic_07-10/rgb.model'
+        #Spec: 'pretrained/san19_epic_07-10/spec.model'
+        RGB: 'pretrained/finetuned/san19_epic_224/rgb.model'
+        Spec: 'pretrained/finetuned/san19_epic_224/spec.model'

@@ -1,0 +1,12 @@
+model_name: 'ActregGRU3'
+model_params:
+    rnn_hidden_size: 1024
+    rnn_num_layers: 1
+    consensus_type: 'avg'
+    weight_global: 0.3
+    weight_local: 0.3
+    weight_both: 0.4
+    use_spec_in_local: false
+    pretrained_global: 'pretrained/ucf101/actreggru2_top0_cat__nofc1_1024hid_1lay/actreg.model'
+    pretrained_local:  'pretrained/ucf101/actreggru2_top1_cat__nofc1_1024hid_1lay_nolowres/actreg.model'
+    pretrained_both:   'pretrained/ucf101/actreggru2_top1_cat__nofc1_1024hid_1lay/actreg.model'

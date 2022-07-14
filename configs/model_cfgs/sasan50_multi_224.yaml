@@ -1,0 +1,5 @@
+model_name: 'SASANMulti'
+model_params:
+    backbone: 'ResNet50'
+    stem: False
+    pretrained_weights: 'pretrained/sasan_imagenet/best_model_IMAGENET_ResNet50_False_ckpt.tar'

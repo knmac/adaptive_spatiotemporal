@@ -1,0 +1,13 @@
+model_name: 'TBN'
+model_params:
+    num_class: [125, 352]
+    num_segments: 3
+    modality: ['RGB', 'Flow', 'Spec']
+    base_model: 'BNInception'
+    consensus_type: 'avg'
+    dropout: 0.5
+    midfusion: 'concat'
+    new_length:
+        RGB: 1
+        Flow: 5
+        Spec: 1

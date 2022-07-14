@@ -1,0 +1,14 @@
+batch_size: 32
+num_workers: 8
+n_epochs: 75
+lr_steps: []  # Epochs to decay learning rate by 10
+print_freq: 20  # Print frequency
+clip_gradient: 40.0  # Gradient norm clipping. Default = None
+partialbn: True
+freeze: False  # freeze all weights except fusion
+eval_freq: 1
+optimizer: 'SGD'
+optim_params:
+    lr: 0.00016
+    momentum: 0.9
+    weight_decay: 0.0005

@@ -1,0 +1,7 @@
+model_name: 'SpatialSamplerThres'
+model_params:
+    top_k: 0
+    min_b_size: 64  # unused because top_k=0
+    max_b_size: 64  # unused because top_k=0
+    #alpha: 1.0  # unused because top_k=0
+    #beta: 0.3  # unused because top_k=0

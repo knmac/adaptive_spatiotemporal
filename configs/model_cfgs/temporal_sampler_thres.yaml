@@ -1,0 +1,4 @@
+model_name: 'TemporalSamplerThres'
+model_params:
+    threshold: -0.45
+    n_frames_to_reset: 20

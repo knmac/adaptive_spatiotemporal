@@ -1,0 +1,4 @@
+model_name: 'ResNetMulti'
+model_params:
+    resnet_type: 'resnet50'
+    pretrained_weights: 'pretrained/resnet50-19c8e357.pth'

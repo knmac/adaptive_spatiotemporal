@@ -1,0 +1,20 @@
+dataset_name: 'epic_kitchens'
+dataset_params:
+    list_file:
+        train: 'dataset_splits/EPIC_KITCHENS_2018/EPIC_train_action_labels.pkl'
+        val:   'dataset_splits/EPIC_KITCHENS_2018/EPIC_val_action_labels.pkl'
+        test:  'dataset_splits/EPIC_KITCHENS_2018/EPIC_val_action_labels.pkl'
+    visual_path: 'data/EPIC_KITCHENS_2018/frames_restruct'
+    audio_path: 'data/EPIC_KITCHENS_2018/audio_dict.pkl'
+    use_audio_dict: True
+    image_tmpl:
+        RGB: 'img_{:010d}.jpg'
+        Flow: '{}_{:010d}.jpg'
+    depth_path: 'data/EPIC_KITCHENS_2018/frames_full'
+    depth_tmpl: '0/PnPf/Inliers_{:04d}.txt'
+    depth_cache_tmpl: 'data/EPIC_KITCHENS_2018/ds_cache/{}/depth_{:04d}.png'
+    semantic_path: 'data/EPIC_KITCHENS_2018/voting_output'
+    semantic_tmpl: 'semantic_{}.data'
+    semantic_cache_tmpl: 'data/EPIC_KITCHENS_2018/ds_cache/{}/semantic_{:04d}.png'
+    resampling_rate: 24000
+    fps: 60

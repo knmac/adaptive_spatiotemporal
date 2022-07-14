@@ -1,0 +1,5 @@
+model_name: 'HalluConvLSTM2'
+model_params:
+    rnn_input_dim: 16
+    rnn_hidden_dim: 16
+    rnn_num_layers: 1

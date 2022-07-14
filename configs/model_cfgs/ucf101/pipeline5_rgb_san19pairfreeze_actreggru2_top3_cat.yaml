@@ -1,0 +1,16 @@
+model_name: 'Pipeline5'
+model_params:
+    low_feat_model_cfg:  'configs/model_cfgs/ucf101/san19_multi_pairwise_112_actnetpretrained.yaml'
+    high_feat_model_cfg: 'configs/model_cfgs/ucf101/san19_multi_pairwise_224_actnetpretrained.yaml'
+    spatial_sampler_cfg: 'configs/model_cfgs/spatial_sampler_thres_top3.yaml'
+    actreg_model_cfg:    'configs/model_cfgs/ucf101/actreggru2.yaml'
+    using_cupy: False
+    num_class: 101
+    num_segments: 16
+    feat_process_type: 'cat'
+    modality: ['RGB']
+    attention_layer: ['layer3', '0']
+    attention_dim: [32, 7, 7]
+    dropout: 0.5
+    new_length:
+        RGB: 1

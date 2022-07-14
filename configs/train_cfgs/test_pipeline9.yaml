@@ -1,0 +1,12 @@
+batch_size: 48
+num_workers: 16
+n_epochs: 1  # make main.py happy
+lr_steps: [1]  # make main.py happy
+#print_freq: 20  # make main.py happy
+#clip_gradient: 20.0  # Gradient norm clipping. Default = None
+#partialbn: True
+#freeze: True  # freeze the feature extraction model
+#eval_freq: 1
+optimizer: 'Adam'  # make main.py happy
+optim_params:  # make main.py happy
+    lr: 0.001  # make main.py happy

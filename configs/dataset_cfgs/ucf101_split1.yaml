@@ -1,0 +1,11 @@
+dataset_name: 'ucf101'
+dataset_params:
+    list_file:
+        train: 'dataset_splits/UCF101/trainlist01.txt'
+        val:   'dataset_splits/UCF101/testlist01.txt'
+        test:  'dataset_splits/UCF101/testlist01.txt'
+    visual_path:     'data/UCF101/frames_256'
+    num_frames_path: 'data/UCF101/n_frames_256.txt'
+    class_ind_path:  'dataset_splits/UCF101/classInd.txt'
+    image_tmpl:
+        RGB: '{:04d}.jpg'

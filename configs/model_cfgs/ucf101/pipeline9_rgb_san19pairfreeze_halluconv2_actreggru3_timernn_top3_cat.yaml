@@ -1,0 +1,26 @@
+model_name: 'Pipeline9'
+model_params:
+    low_feat_model_cfg:   'configs/model_cfgs/ucf101/san19_multi_pairwise_112_actnetpretrained.yaml'
+    high_feat_model_cfg:  'configs/model_cfgs/ucf101/san19_multi_pairwise_224_actnetpretrained.yaml'
+    hallu_model_cfg:      'configs/model_cfgs/halluconvlstm2.yaml'
+    actreg_model_cfg:     'configs/model_cfgs/ucf101/actreggru3.yaml'
+    spatial_sampler_cfg:  'configs/model_cfgs/spatial_sampler_thres_top3.yaml'
+    temporal_sampler_cfg: 'configs/model_cfgs/temporal_sampler_rnn.yaml'
+    hallu_pretrained_weights:  'pretrained/ucf101/halluconvlstm2_112_layer3-0/hallu.model'
+    actreg_pretrained_weights: 'pretrained/ucf101/actreggru3_top3_cat__nofc1_1024hid_1lay/actreg.model'
+    freeze_hallu: True
+    freeze_actreg: False
+    using_cupy: False
+    temperature: 5.0
+    temperature_exp_decay_factor: -0.045
+    eff_loss_weights: 0.1
+    usage_loss_weights: 3.0
+    num_class: 101
+    num_segments: 16
+    feat_process_type: 'cat'
+    modality: ['RGB']
+    attention_layer: ['layer3', '0']
+    attention_dim: [32, 7, 7]
+    dropout: 0.5
+    new_length:
+        RGB: 1

@@ -1,0 +1,13 @@
+model_name: 'Pipeline3'
+model_params:
+    feat_model_cfg: 'configs/model_cfgs/san19_multi_pairwise_epicpretrained.yaml'
+    hallu_model_cfg: 'configs/model_cfgs/halluconvlstm2.yaml'
+    num_class: [125, 352]
+    num_segments: 10
+    rnn_prefix_len: 5
+    tf_decay: 0.95
+    modality: ['RGB']
+    attention_layer: ['layer3', '0']
+    attention_dim: [32, 14, 14]
+    new_length:
+        RGB: 1

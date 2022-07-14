@@ -1,0 +1,3 @@
+model_name: 'AvgHallu'
+model_params:
+    fusion_dim: 512

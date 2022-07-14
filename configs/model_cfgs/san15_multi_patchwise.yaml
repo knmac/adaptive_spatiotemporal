@@ -1,0 +1,6 @@
+model_name: 'SANMulti'
+model_params:
+    san_sa_type: 1  # Pairwise
+    san_layers:  [3, 2, 3, 5, 2]
+    san_kernels: [3, 7, 7, 7, 7]
+    san_pretrained_weights: 'pretrained/san_imagenet/san15_patchwise/model/model_best.pth'

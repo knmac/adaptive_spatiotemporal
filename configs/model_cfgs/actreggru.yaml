@@ -1,0 +1,5 @@
+model_name: 'ActregGRU'
+model_params:
+    rnn_input_size: 512
+    rnn_hidden_size: 512
+    rnn_num_layers: 1

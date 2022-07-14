@@ -1,0 +1,11 @@
+model_name: 'ActregGRU3'
+model_params:
+    rnn_hidden_size: 1024
+    rnn_num_layers: 2
+    consensus_type: 'avg'
+    weight_global: 0.3
+    weight_local: 0.3
+    weight_both: 0.4
+    pretrained_global: ~
+    pretrained_local: ~
+    pretrained_both: ~

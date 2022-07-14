@@ -1,0 +1,4 @@
+model_name: 'ActregFc'
+model_params:
+    before_softmax: True
+    consensus_type: 'avg'
